@@ -1068,7 +1068,7 @@ minetest.register_node("scifi_nodes:itemholder", {
 				minetest.check_player_privs(name, "protection_bypass") then
 			local wield_item = clicker:get_wielded_item():get_name()
 			item:take_item()
-			minetest.add_item(pos, wield_item)
+			-- minetest.add_item(pos, wield_item)
 		end
 	end,
 	can_dig = function(pos,player)
